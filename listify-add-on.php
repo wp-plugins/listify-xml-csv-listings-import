@@ -147,7 +147,7 @@ $listify_addon->add_field( 'sunday_close', 'Close', 'text' );
 $listify_addon->set_import_function( 'listify_addon_import' );
 
 $listify_addon->admin_notice(
-	'The Listify Add-On requires WP All Import <a href="http://www.wpallimport.com/order-now/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=listify" target="_blank">Pro</a> or <a href="http://wordpress.org/plugins/wp-all-import" target="_blank">Free</a>, and the <a href="http://themeforest.net/item/wordpress-directory-theme-listify/9602611">Listify</a> theme.',
+	'The Listify Add-On requires WP All Import <a href="http://www.wpallimport.com/order-now/?utm_source=free-plugin&utm_medium=dot-org&utm_campaign=listify" target="_blank">Pro</a> or <a href="http://wordpress.org/plugins/wp-all-import" target="_blank">Free</a>, and the <a href="https://astoundify.com/go/wp-all-import-buy-listify/">Listify</a> theme.',
 	array( 
 		'themes' => array( 'Listify' )
 ) );
