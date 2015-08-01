@@ -4,8 +4,8 @@ Tags: wp job manager, import listings, import business listings, import director
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.1.0
-Tested up to: 4.2.2
-Stable tag: 1.0.2
+Tested up to: 4.2.3
+Stable tag: 1.0.3
 
 Easily import listings from any XML or CSV file to the Listify theme with the Listify Add-On for WP All Import.
 
@@ -77,6 +77,9 @@ The Listify Add-On will appear in the Step 3 of WP All Import.
 Aside from making your import easier and simpler, the Listify Add-On will fully support your theme’s various image galleries and file attachments as well as allow you to easily import location data.
 
 == Changelog ==
+
+= 1.0.3 =
+* Improve video imports
 
 = 1.0.2 =
 * Fix admin notice bug
