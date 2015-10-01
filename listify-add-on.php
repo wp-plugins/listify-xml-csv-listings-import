@@ -4,7 +4,7 @@
 Plugin Name: WP All Import - Listify Add-On
 Plugin URI: http://www.wpallimport.com/
 Description: Supporting imports into the Listify theme.
-Version: 1.0.3
+Version: 1.0.4
 Author: Soflyy
 */
 
@@ -22,15 +22,13 @@ function listing_gallery( $post_id, $attachment_id, $image_filepath, $import_opt
     // build gallery_images
     $new_url = wp_get_attachment_url( $attachment_id );
 
-    $urls = get_post_custom_values( '_gallery_images', $post_id );
+    $urls = get_post_meta( $post_id, '_gallery_images', true );
 
     $new_urls = array();
 
     foreach( $urls as $key => $url ) {
 
-        $url = unserialize( $url );
-
-        $new_urls[] = $url[0];
+        $new_urls[] = $url;
 
     }
 
@@ -41,15 +39,13 @@ function listing_gallery( $post_id, $attachment_id, $image_filepath, $import_opt
     //build gallery
     $new_id = $attachment_id;
 
-    $ids = get_post_custom_values( '_gallery', $post_id );
+    $ids = get_post_meta( $post_id, '_gallery', true );
 
     $new_ids = array();
 
     foreach( $ids as $key => $id ) {
 
-        $id = unserialize( $id );
-
-        $new_ids[] = $id[0];
+        $new_ids[] = $id;
 
     }
 

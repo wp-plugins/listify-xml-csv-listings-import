@@ -2,4 +2,4 @@
 
 ## Add-On Issues
 
-* All is quiet of the western front.
+* All is quiet on the western front.
